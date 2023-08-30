@@ -8,9 +8,9 @@ Scriptable Object Event dalam Unity adalah konsep yang digunakan untuk membuat m
 
 # Contoh Implementasinya
 
+   
    public class TriggerZone : MonoBehaviour
    {
-   
     public GameEvent OnCharacterEnter;
     
     private void OnTriggerEnter(Collider other)
