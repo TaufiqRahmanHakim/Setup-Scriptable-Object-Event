@@ -10,13 +10,13 @@ Scriptable Object Event dalam Unity adalah konsep yang digunakan untuk membuat m
 
    
     public class TriggerZone : MonoBehaviour{
-    public GameEvent OnCharacterDeath;
+    public GameEvent OnPlayerDeath;
     
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && healthPlayer == 0)
         {
-            OnCharacterDeath.Raise();
+            OnPlayerDeath.Raise();
         }
       }
     }
